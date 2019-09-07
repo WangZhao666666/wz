@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+<div>
+<img src="img/树.png" alt="">
+<form action="#" method="post" name="contact">
+    <ul>
+        <li class="usually">
+            <h2>用户注册</h2>
+        </li>
+        <li class="usually">
+            <span>昵称：</span>
+            <input type="text" id="name" name="name" placeholder="如：ikun" required>
+        </li>
+        <li class="usually">
+            <span>注册邮箱：</span>
+            <input type="email" name="email" placeholder="如：1446424037@qq.com" required>
+        </li>
+        <li class="usually">
+            <span>密码：</span>
+            <input type="password" name="password" minlength="6" maxlength="20" placeholder="密码不少于6位" required>
+        </li>
+        <li class="usually">
+            <span>确认密码：</span>
+            <input type="password" name="spassword" minlength="6" maxlength="20" placeholder="确认密码" required>
+        </li>
+        <li class="special">
+            <span>性别：</span>
+            <input type="radio" name="sex" id="male" checked>
+            <label for="male">男</label>
+            <input type="radio" name="sex" id="female" checked>
+            <label for="female">女</label>
+        </li>
+        <li class="usually">
+            <span>年龄：</span>
+            <input type="number" name="age" required>
+        </li>
+        <li class="special">
+            <span>兴趣爱好：</span>
+            <input type="checkbox" name="interest" id="sing">
+            <label for="sing">唱歌</label>
+            <input type="checkbox" name="interest" id="dance">
+            <label for="dance">跳舞</label>
+            <input type="checkbox" name="interest" id="rap">
+            <label for="rap">rap</label>
+            <input type="checkbox" name="interest" id="basketball">
+            <label for="basketball">篮球</label>
+            <input type="checkbox" name="interest" id="football">
+            <label for="football">足球</label>
+            <input type="checkbox" name="interest" id="swim">
+            <label for="swim">游泳</label>
+        </li>
+        <li class="usually">
+            <span>自我介绍：</span>
+            <textarea rows="10" cols="200" name="introduction" placeholder="请输入你的相关信息，如：大家好，我是练习时常两年半的个人练习生蔡徐坤，喜欢唱、跳、rap、篮球，music。……，鸡你太美！" required></textarea>
+        </li>
+        <li>
+            <button type="submit">立即注册</button>
+        </li>
+    </ul>
+</form>
+</div>
+</body>
+</html>

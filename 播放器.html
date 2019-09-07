@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>视频播放器</title>
+    <link rel="stylesheet" href="css/video.css">
+</head>
+<body>
+<video src="video/myVideo.mp4" id="myVideo" onclick="isMenu()">
+    您的浏览器不支持video标签
+</video>
+<br>
+<div id="buttonDiv">
+    <button id="playPause" onclick="playPause()">播 放</button>
+    <button onclick="goback(5)">快 进</button>
+    <button onclick="goback(-5)">快 退</button>
+    <button onclick="volume(0.1)">音量+</button>
+    <button onclick="volume(-0.1)">音量-</button>
+    <button id="isMuted" onclick="isMuted()">静 音</button>
+    <button id="slowup" onclick="playspeed(0.25)">倍速+</button>
+    <span>当前倍速</span><span id="playspeed">1.00</span>
+    <button id="slowdown" onclick="playspeed(-0.25)">倍速-</button>
+</div>
+<script type="text/javascript" src="js/video.js" charset="gbk"></script>
+</body>
+</html>

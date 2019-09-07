@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="css/audio.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" media="screen">
+</head>
+<body>
+    <div id="container">
+        <div id="player">
+            <audio src="audio/出山.mp3" id="audio"></audio>
+            <img src="img/出山.jpg" id="img" alt="">
+            <input type="checkbox" id="to-lyrics">
+            <label class="to-lyrics-label" for="to-lyrics">
+                <i class="fa fa-caret-up fa-lg"></i>
+            </label>
+            <div class="cover">
+                <div class="controls">
+                    <button title="顺序播放">
+                        <i class="fa fa-retweet fa-lg"></i>
+                    </button>
+                    <button title="上一首">
+                        <i class="fa fa-backward fa-2x"></i>
+                    </button>
+                    <button id="play-pause" title="播放" onclick="togglePlayPause()">
+                        <i class="fa fa-play fa-3x"></i>
+                    </button>
+                    <button title="下一首">
+                        <i class="fa fa-forward fa-2x"></i>
+                    </button>
+                    <button title="随机播放">
+                        <i class="fa fa-random fa-lg"></i>
+                    </button>
+                    <input type="range" name="volume" id="volume" min="0" max="2" step="0.1" onchange="setVolume()">
+                </div>
+                <div class="info">
+                    <p class="song"><a href="#" target="_blank">出山</a></p>
+                    <p class="author"><a href="#" target="_blank">花粥,王胜男</a></p>
+                </div>
+                <div class="lyrics">
+                    <p>出山</p>
+                    <p>花粥,王胜男</p>
+                    <p>在夜半三更过天桥从来不敢回头看</p>
+                    <p>白日里是车水马龙此时脚下是忘川</p>
+                    <p>我独自走过半山腰山间野狗来作伴</p>
+                    <p>层林尽染百舸流秋风吹过鬼门关</p>
+                    <p>一瞬三年五载 品粗茶 食淡饭</p>
+                    <p>六界八荒四海 无人与我来叫板</p>
+                    <p>人间荒唐古怪 竹林外 有书斋</p>
+                    <p>匿于此地畅快 偏来者不善善者不来</p>
+                    <p>是我装模作样在瞎掰</p>
+                    <p>还是他们本就心怀鬼胎</p>
+                    <br>
+                    <p>有人不知悔改 迷雾中混淆黑白</p>
+                    <p>在情怀里市侩 旁人不敢来拆穿</p>
+                    <p>看似时来运转 实则在顶风作案</p>
+                    <p>待曲终又人散 这一出还有谁在围观</p>
+                    <br>
+                    <p>在凡尘修炼二十载听闻水能滴石穿</p>
+                    <p>帝王豪杰风云变幻敌不过桑田沧海</p>
+                    <p>我不关心谁的江山只眷恋两小无猜</p>
+                    <p>兴风作浪不稀罕只身固守峨眉山</p>
+                    <p>一瞬三年五载 品粗茶 食淡饭</p>
+                    <p>六界八荒四海 无人与我来叫板</p>
+                    <p>人间荒唐古怪 竹林外 有书斋</p>
+                    <p>匿于此地畅快 偏来者不善善者不来</p>
+                    <p>是我装模作样在瞎猜</p>
+                    <p>还是他们本就心怀鬼胎</p>
+                    <p>有人不知悔改 迷雾中混淆黑白</p>
+                    <p>在情怀里市侩 旁人不敢来拆穿</p>
+                    <p>看似时来运转 实则在顶风作案</p>
+                    <p>待曲终又人散 这一出还有谁在围观</p>
+                    <br>
+                    <p>悄悄配唠唠叨叨</p>
+                    <p>随便瞧瞧我凑凑热闹</p>
+                    <p>客串也别太潦草</p>
+                    <p>吃的生蚝要蘸个酱料</p>
+                    <p>悄悄你唠唠叨叨</p>
+                    <p>随便瞧瞧你凑的热闹</p>
+                    <p>听到你做个记号</p>
+                    <p>请装进书包别四处招摇</p>
+                    <p>有人迷途知返</p>
+                    <p>便是苦尽甘来</p>
+                    <p>一瞬三年五载</p>
+                    <p>曲终又人散</p>
+                </div>
+                <p class="scroll">收起</p>
+            </div>
+        </div>
+    </div>
+    <script src="js/audio.js" charset="utf-8"></script>
+</body>
+</html>
