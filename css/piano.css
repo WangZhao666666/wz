@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 0;
+}
+.main{
+    margin: 0;
+    width: 100%;
+    height: 420px;
+    position: relative;
+}
+li{
+    width: 60px;
+    height: 360px;
+    float: left;
+    position: relative;
+}
+.key{
+    position: absolute;
+    float: left;
+    top: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+.key:hover{
+    background: #cacbd1;
+    cursor: pointer;
+}
+.whitekey{
+    width: 60px;
+    height: 360px;
+    color: #666;
+    background: linear-gradient(to bottom,#fff 0%,#aaa 100%);
+    border: 2px solid #999;
+}
+.blackkey{
+    width: 36px;
+    height: 200px;
+    color: #ccc;
+    margin-left: 40px;
+    z-index: 1;
+    background: linear-gradient(to bottom,#000 0%,#555 100%);
+    border: 2px solid #666;
+}

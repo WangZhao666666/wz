@@ -1,0 +1,31 @@
+body,h4{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #e6e8ea;
+}
+@font-face {
+    font-family: myfont;
+}
+.wrapper{
+    width: 1024px;
+    padding: 30px;
+    line-height: 1.75em;
+    margin: 0 auto;
+    font-family: myfont;
+    color: #333;
+    box-sizing: border-box;
+    column-count: 2;
+    column-width: 400px;
+    column-gap: 100px;
+    column-rule: 3px solid #ccc;
+    text-indent: 2em;
+}
+h4{
+    font-size: 24px;
+    column-span: all;
+}
+p{
+    font-weight: bold;
+}

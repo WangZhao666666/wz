@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+#buttonDiv{
+    z-index: -1;
+    opacity: 0;
+    left: 500px;
+    top: 550px;
+    position: absolute;
+    transition: all 0.5s;
+}
+span{
+    color: white;
+}
+.disabled{
+    background: #aaaaaa;
+    cursor: not-allowed;
+    pointer-events:none
+}
+button{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 14px/100% Arial, Helvetica, sans-serif;
+    padding: 1em .5em 1em .5em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    border-radius: 0.5em;
+    background: #944bc8;
+    color: white;
+}
+button:hover{
+    text-decoration: none;
+}
+video{
+    width: 1080px;
+}

@@ -1,0 +1,126 @@
+p{
+    font-family: '微软雅黑';
+    font-size: 40px;
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
+.wrapper{
+    position: relative;
+    z-index: 1;
+    min-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.bg{
+    position: absolute;
+    left: -180px;
+    top: -180px;
+    z-index: 1;
+    width: 1920px;
+    background: url("../img/树.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+.content{
+    position: relative;
+    z-index: 2;
+    width: 1000px;
+    height: 1150px;
+    margin: 0 auto;
+    margin-top: -531px;
+}
+.style{
+    position: absolute;
+    top: 716px;
+    left: 200px;
+    width: 870px;
+    height: 560px;
+}
+.peach{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 115px;
+    height: 125px;
+    display: block;
+    background: url("../img/字母.png");
+    animation-iteration-count: infinite;
+    animation-name: shake;
+    animation-timing-function: ease-in-out;
+}
+.peach:nth-child(2){
+    background-position: 0 0;
+    top: 100px;
+    left: 72px;
+    animation-duration: 2.5s;
+}
+.peach:nth-child(3){
+    background-position: -115px 0;
+    top: 15px;
+    left: 242px;
+    animation-duration: 3.5s;
+}
+.peach:nth-child(4){
+    background-position: -230px 0;
+    top: 71px;
+    left: 452px;
+    animation-duration: 1.5s;
+}
+.peach:nth-child(5){
+    background-position: -345px 0;
+    top: 156px;
+    left: 261px;
+    animation-duration: 4s;
+}
+.peach:nth-child(6){
+    background-position: -460px 0;
+    top: 256px;
+    left: 426px;
+    animation-duration: 3s;
+}
+.peach:nth-child(7){
+    background-position: -90px -120px;
+    top: 247px;
+    left: 668px;
+    animation-duration: 3.5s;
+}
+.peach:nth-child(8){
+    background-position: -205px -120px;
+    top: 290px;
+    left: 100px;
+    animation-duration: 2s;
+}
+.peach:nth-child(9){
+    background-position: 6px -260px;
+    top: 92px;
+    left: -78px;
+    animation-duration: 4s;
+}
+@keyframes shake {
+    0%{
+        transform: rotate(2deg);
+        transform-origin: 50% 0;
+    }
+    20%{
+        transform: rotate(10deg);
+        transform-origin: 50% 0;
+    }
+    40%{
+        transform: rotate(0deg);
+        transform-origin: 50% 0;
+    }
+    60%{
+        transform: rotate(-2deg);
+        transform-origin: 50% 0;
+    }
+    80%{
+        transform: rotate(-10deg);
+        transform-origin: 50% 0;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: 50% 0;
+    }
+}
